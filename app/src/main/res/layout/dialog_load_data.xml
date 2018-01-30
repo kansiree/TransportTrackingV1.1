@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_white">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/headText"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลขที่ใบเที่ยว"
+                style="@style/Hamburger_Body" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_editText"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/headText"
+            android:weightSum="1"
+            android:padding="5dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="5dp"
+                android:background="@drawable/bg_edit_text"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:id="@+id/btn_scan"
+                android:src="@drawable/ic_barcode"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_load_data_confirm"
+            android:layout_below="@+id/layout_editText"
+            android:background="@drawable/bg_button"
+            android:text="ยืนยันรายการ"
+            style="@style/titleText"/>
+    </RelativeLayout>
+</LinearLayout>

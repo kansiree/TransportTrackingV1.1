@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true">
+        <TextView
+            style="@style/PopupDesign.Title"
+            android:id="@+id/textset1"
+            android:text="line1" />
+        <TextView
+            style="@style/PopupDesign.Title"
+            android:id="@+id/textset2"
+            android:text="line2"
+            android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_menu_phone"/>
+            <TextView
+                style="@style/PopupDesign.Body"
+                android:id="@+id/textset3"
+                android:text="line3"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                style="@style/PopupDesign.Body.Input"
+                android:id="@+id/textset4"
+                android:text="line4"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                style="@style/PopupDesign.Body.Output"
+                android:id="@+id/textset5"
+                android:layout_marginLeft="5dp"
+                android:text="line4" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_close_dialog"
+            style="@style/DialogButtonDownload"
+            android:background="@drawable/btn_close"
+            android:layout_margin="15dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

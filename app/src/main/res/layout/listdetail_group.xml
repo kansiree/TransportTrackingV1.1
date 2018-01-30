@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_head">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOnBook"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/group_text"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/name"
+            android:text="S"/>
+        <Button
+            android:id="@+id/add_list"
+            android:layout_width="@dimen/btn_dialog_w"
+            android:layout_height="@dimen/btn_dialog_h"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_addlist"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+</LinearLayout>
+

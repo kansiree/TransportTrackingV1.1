@@ -1,0 +1,180 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="EditTextLogin">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/login_edittext_margin</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:padding">@dimen/login_edittext_padding</item>
+        <item name="android:ems">13</item>
+    </style>
+
+    <style name="PopupDesign">
+        <item name="android:textSize">@dimen/text_login_button_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PopupDesign.Title">
+        <item name="android:textSize">@dimen/title_popup_text_size</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="PopupDesign.Body">
+        <item name="android:textSize">@dimen/body_popup_text_size</item>
+    </style>
+
+    <style name="PopupDesign.Body.Input">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PopupDesign.Body.Output">
+        <item name="android:textColor">@color/colorPink</item>
+    </style>
+
+    <style name="Theme.DoNotDim" parent="android:Theme">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogDownload">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_margin">@dimen/btn_dialog_margin</item>
+        <item name="android:textSize">@dimen/dialog_button_textsize</item>
+    </style>
+
+    <style name="DialogDownload.Body">
+        <item name="android:layout_marginTop">@dimen/dialog_download_body_margintop</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_download_body_marginBottom</item>
+        <item name="android:textSize">@dimen/text_dialog_body</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DialogButtonDownload">
+        <item name="android:layout_width">@dimen/btn_dialog_w</item>
+        <item name="android:layout_height">@dimen/btn_dialog_h</item>
+        <item name="android:background">@drawable/blue_button_bg</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/btn_dialog_margin</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">@dimen/title_popup_text_size</item>
+    </style>
+
+    <style name="DialogButtonDownload.Retry">
+        <item name="android:textSize">@dimen/retryDownload_text</item>
+    </style>
+
+    <style name="DefaultButton">
+        <item name="android:layout_width">@dimen/btn_dialog_w</item>
+        <item name="android:layout_height">@dimen/btn_dialog_h</item>
+        <item name="android:layout_margin">@dimen/btn_dialog_margin</item>
+    </style>
+
+    <style name="HeadText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titleText">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="group_text">
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#8c8c8c</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="List_text">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="List_text.Bottom">
+        <item name="android:textSize">@dimen/txt_detail</item>
+    </style>
+
+    <style name="HamburgerMenu">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Hamburger_title">
+        <item name="android:textSize">@dimen/txt_detail</item>
+        <item name="android:textColor">@color/ColorTitleText</item>
+    </style>
+
+    <style name="Hamburger_Body">
+        <item name="android:textSize">@dimen/txt_detail</item>
+        <item name="android:textColor">@color/ColorBodyText</item>
+    </style>
+
+    <style name="Title_Detail">
+        <item name="android:textSize">@dimen/txt_detail</item>
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:padding">@dimen/list_detail</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="list_detail">
+        <item name="android:textSize">@dimen/txt_detail</item>
+        <item name="android:textColor">@color/ColorGrayBack</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="head_detail">
+        <item name="android:textSize">@dimen/txt_detail</item>
+        <item name="android:textColor">@color/colorGreyTitleList</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="edit_dialog">
+        <item name="android:textSize">@dimen/txt_detail</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="edit_dialog.head">
+        <item name="android:textColor">@color/ColorGrayBack</item>
+    </style>
+</resources>

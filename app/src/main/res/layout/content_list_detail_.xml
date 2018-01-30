@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="th.co.gosoft.storemobile.transporttracking.List_detail_"
+    tools:showIn="@layout/app_bar_list_detail_">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout_on_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_list_detail"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_tab_on_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorStroke">
+
+                    <ImageView
+                        android:id="@+id/image_book"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:padding="4dp"
+                        android:src="@drawable/book" />
+
+                    <TextView
+                        android:id="@+id/txt_onBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/image_book"
+                        android:text="@string/on_book" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_arrow_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_sent_on_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/list_detail"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Title_Detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="รายการส่งสินค้า" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_sent_on_book"
+                        android:padding="@dimen/list_detail">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/list_detail">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Title_Detail">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="รายการเก็บกลับ"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorRed"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/image_plus"
+                                android:src="@drawable/ic_plus"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorGreyTitleList"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/image_plus"
+                                android:text="เพิ่มรายการ"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_keep_on_book"
+                        android:padding="@dimen/list_detail">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/list_detail">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กรุณาแนบภาพถ่ายหลักฐาน"
+                        style="@style/Title_Detail"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list_photo_on_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/list_detail">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/list_detail">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กรุณาระบุหมายเหตุ (กรณีมีปัญหาในการส่ง)"
+                        style="@style/Title_Detail"/>
+
+                    <Spinner
+                        android:id="@+id/dropdown_on_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/background_white">
+
+                    </Spinner>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_list_detail">
+
+                <RelativeLayout
+                    android:id="@+id/head_on_shelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorStroke">
+
+                    <ImageView
+                        android:id="@+id/image_shelf"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:padding="4dp"
+                        android:src="@drawable/shelf" />
+                    <TextView
+                        android:id="@+id/txt_onShelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/image_shelf"
+                        android:text="@string/on_shelf" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_arrow_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_sent_on_shelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/list_detail"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Title_Detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="รายการส่งสินค้า" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list_sent_on_shelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/list_detail">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/list_detail">
+
+                    <TextView
+                        style="@style/Title_Detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="รายการเก็บกลับ" />
+                    <include layout="@layout/card_item_keep_onshelf">
+
+                    </include>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/list_detail">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กรุณาแนบภาพถ่ายหลักฐาน"
+                        style="@style/Title_Detail"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list_photo_on_shelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/list_detail">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/list_detail">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กรุณาระบุหมายเหตุ (กรณีมีปัญหาในการส่ง)"
+                        style="@style/Title_Detail"/>
+
+                    <Spinner
+                        android:id="@+id/dropdown_on_shelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_white"
+                        android:spinnerMode="dropdown">
+                    </Spinner>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/div_signature1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ลายเซ็น" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_signature_pad"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bg_signature"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_signature"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_signature">
+
+                        <Button
+                            android:id="@+id/print"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="ลบ" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_sucess"
+                android:text="ยืนยันการทำงานเสร็จสิ้น"
+                android:textColor="@color/colorTextTitle" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

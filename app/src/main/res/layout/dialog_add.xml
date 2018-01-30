@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_barcode_add"
+            />
+
+        <EditText
+            android:id="@+id/edt_barcode_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_dialog_h"
+            android:layout_below="@id/btn_barcode_add"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="8"
+            android:hint="Barcode number"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edt_product_add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_dialog_h"
+            android:layout_below="@id/edt_barcode_add"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="8"
+            android:hint="Product name"
+            android:inputType="text"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_below="@id/edt_product_add_name"
+            style="@style/DefaultButton"
+            android:background="@drawable/btn_cancel"
+            />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/DefaultButton"
+            android:layout_below="@id/edt_product_add_name"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_confirm" />
+    </RelativeLayout>
+</LinearLayout>

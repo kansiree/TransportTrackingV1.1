@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c6c7c6</color>
+    <color name="colorPrimaryDark">#455d70</color>
+    <color name="colorAccent">#c1c2c1</color>
+    <color name="colorTextTitle">#FFFFFF</color>
+    <color name="colorStroke">#e3e3e3</color>
+    <color name="colorStrokee">#f8f9fa</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPink">#2ff51317</color>
+    <color name="colorRed">#ed1c24</color>
+    <color name="colorDarkRed">#d2191e</color>
+    <color name="colorTabSelect">#f4390b</color>
+    <color name="colorBlue">#455d70</color>
+    <color name="colorOrange">#ef6c00</color>
+    <color name="colorGreyButtonBG">#c5c5c5</color>
+    <color name="colorGreyTitleList">#969696</color>
+    <color name="colorYellow">#ffc400</color>
+    <color name="colorDarkYellow">#ffa200</color>
+    <color name="colorOnBook">#3d67f555</color>
+    <color name="colorOnShelf">#38e138</color>
+    <color name="colorHeadOnBook">#5FD267</color>
+    <color name="colorBarcode">#1239A4</color>
+    <color name="ColorTitleText">#8c8c8c</color>
+    <color name="ColorBodyText">#000</color>
+    <color name="ColorGray">#afafaf</color>
+    <color name="ColorGrayBack">#605f5f</color>
+</resources>

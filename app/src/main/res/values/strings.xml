@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">TransportTracking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="word_map">แผนที่</string>
+    <string name="word_list">รายการ</string>
+    <string name="word_login">เข้าสู่ระบบ</string>
+    <string name="word_dialog_workno">เลขที่ใบงาน xxxxxx</string>
+    <string name="word_dialog_download">โหลด</string>
+    <string name="word_dialog_downloading">กำลังดาวน์โหลด...</string>
+    <string name="word_cancle">ยกเลิก</string>
+    <string name="word_downloadretry">โหลดอีกครั้ง</string>
+    <string name="word_failDownload">ดาวน์โหลดไม่สำเร็จ</string>
+    <string name="word_success">สำเร็จ</string>
+    <string name="word_inprogress">รอดำเนินการ</string>
+    <string name="word_progress_success">ดำเนินการแล้ว</string>
+    <string name="word_fail">ไม่สำเร็จ</string>
+    <string name="word_close">ปิด</string>
+    <string name="word_save">บันทึก</string>
+    <string name="word_clear">ล้าง</string>
+    <string name="download_data">โหลดข้อมูล</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="permission_refused">Permission was not granted</string>
+    <string name="permission_request_title">Special Permission Request</string>
+    <string name="app_permission_notice">This permission request is very important to your app functionality. If it is not granted your app might not work the way it is intended</string>
+    <string name="failed_draw">Empty line path return</string>
+    <string name="server_error">Server error. Something when wrong with the server</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="prefix_title">เลขที่ใบงาน</string>
+    <string name="prefix_clockin">เวลาเข้างาน</string>
+    <string name="prefix_employeeid">รหัสพนักงาน </string>
+
+    <string name="on_book">On Book</string>
+    <string name="on_shelf">On Shelf</string>
+    <string name="tote_ID">Tote ID</string>
+    <string name="box_ID">Box ID</string>
+
+    <string-array name="note">
+        <item>หมายเหตุ</item>
+        <item>ร้านปิด</item>
+        <item>เอกสารไม่ตรงกับสินค้า/เอกสารหาย</item>
+        <item>สินค้าเปียก/สินค้าชำรุด/สินค้าไม่ครบ</item>
+        <item>รถเกิดอุบัติเหตุ</item>
+        <item>ร้านน้ำท่วม</item>
+    </string-array>
+
+    <string-array name="unit">
+        <item>กล่อง</item>
+        <item>เบรค</item>
+    </string-array>
+    <string name="title_activity_list_detail_">List_detail_</string>
+</resources>
